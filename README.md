@@ -33,7 +33,7 @@ A simple web application that lists books , lets you sort and search by book tit
 ## Deployment Link:
 
 You can access the live version of the app here:  
-[Book Listing](https://inspirationall-quote-generatorr.netlify.app/)
+[Book Listing](https://boook-listing.netlify.app/)
 
 ## Technologies Used:
 
