@@ -206,9 +206,9 @@ function createBookCard(book) {
 function toggleView() {
   state.view = state.view === "grid" ? "list" : "grid";
 
-  const baseClasses = "grid p-4";
-  const gridClasses = "grid-cols-3 gap-4";
-  const listClasses = "grid-cols-1 gap-8";
+  const baseClasses = "grid";
+  const gridClasses = "grid-cols-1 md:grid-cols-3 gap-4 p-4";
+  const listClasses = "grid-cols-1 gap-4 md:gap-8 p-6 md:p-4";
 
   elements.booksContainer.classList =
     state.view === "grid"

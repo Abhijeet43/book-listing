@@ -46,7 +46,9 @@
             </g>
           </svg>
         </button>
-        <label for="filter-select">Sort by:</label>
+        <label for="filter-select" class="hidden sm:inline-block"
+          >Sort by:</label
+        >
         <select name="filter" id="filter-select">
           <option>Select Filter</option>
           <option value="title">Title</option>
@@ -54,6 +56,9 @@
         </select>
       </section>
     </header>
-    <main id="books-container" class="gap-4 grid grid-cols-3 p-8"></main>
+    <main
+      id="books-container"
+      class="gap-4 grid grid-cols-1 md:grid-cols-3 p-8"
+    ></main>
   </body>
 </html>
