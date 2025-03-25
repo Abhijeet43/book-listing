@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <script type="module" src="./src/main.js" defer></script>
+    <title>Book Listing</title>
+  </head>
+  <body>
+    <header class="flex justify-between p-8">
+      <input
+        placeholder="Search books by title or author...."
+        type="search"
+        id="search-input"
+        class="p-2 border border-black rounded-md w-1/2"
+      />
+      <section class="flex items-center">
+        <button
+          title="Toggle View"
+          id="view-toggle"
+          class="bg-purple-500 hover:bg-purple-600 mr-4 px-2 py-1 rounded-md text-white cursor-pointer"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            class="w-6 h-6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              {" "}
+              <path
+                d="M8 6L21 6.00078M8 12L21 12.0008M8 18L21 18.0007M3 6.5H4V5.5H3V6.5ZM3 12.5H4V11.5H3V12.5ZM3 18.5H4V17.5H3V18.5Z"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              {" "}
+            </g>
+          </svg>
+        </button>
+        <label for="filter-select">Sort by:</label>
+        <select name="filter" id="filter-select">
+          <option>Select Filter</option>
+          <option value="title">Title</option>
+          <option value="author">Author</option>
+        </select>
+      </section>
+    </header>
+    <main id="books-container" class="gap-4 grid grid-cols-3 p-8"></main>
+  </body>
+</html>
